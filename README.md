@@ -26,7 +26,7 @@ This project provisions an AWS S3 bucket for static website hosting using Terraf
 
 Clone the Repository
 
-git clone https://github.com/agswapnil7/s3-static-website-terraform.git
+git clone https://github.com/agswapnil7/s3-static-website.git
 cd s3-static-website-terraform
 Initialize Terraform
 
