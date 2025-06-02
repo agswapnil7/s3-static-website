@@ -1,31 +1,19 @@
-# 🌐 Static Website Hosting on AWS S3 using Terraform
+#  Static Website Hosting on AWS S3 using Terraform
 
 This project provisions an AWS S3 bucket for static website hosting using Terraform. It configures public access, uploads basic HTML files, and outputs the live website URL.
 
 ---
 
-## 📦 Features
+##  Features
 
-- ✅ Creates an S3 bucket with static website hosting
-- ✅ Configures public access policies
-- ✅ Uploads `index.html` and `error.html`
-- ✅ Outputs the website endpoint
-
----
-
-## 📁 Project Structure
-
-.
-├── index.html # Homepage file
-├── main.tf # Terraform configuration
-├── variables.tf # Input variables
-├── outputs.tf # Output
-└── README.md # Project documentation
-
+-  Creates an S3 bucket with static website hosting
+-  Configures public access policies
+-  Uploads `index.html` and `error.html`
+-  Outputs the website endpoint
 
 ---
 
-## ⚙️ Prerequisites
+## Prerequisites
 
 - [Terraform](https://developer.hashicorp.com/terraform/downloads)
 - AWS CLI with credentials configured (`aws configure`)
@@ -33,11 +21,11 @@ This project provisions an AWS S3 bucket for static website hosting using Terraf
 
 ---
 
-## 🚀 Deployment Steps
-
-1. **Clone the Repository**
-
+## Deployment Steps
 ```bash
+
+Clone the Repository
+
 git clone https://github.com/yourusername/s3-static-website-terraform.git
 cd s3-static-website-terraform
 Initialize Terraform
@@ -59,15 +47,18 @@ Outputs:
 website_url = http://your-bucket-name.s3-website-us-east-1.amazonaws.com
 
 
-🧹 Destroy Infrastructure
+Destroy Infrastructure
 To delete all created AWS resources:
 
 terraform destroy
+```
 
+### Notes
 
-📝 Notes
 S3 bucket names must be globally unique.
 
 Static website hosting works in specific regions (like us-east-1).
 
 Don’t store sensitive data in S3 buckets exposed publicly.
+
+---
